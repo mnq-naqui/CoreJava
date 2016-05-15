@@ -1,2 +1,2 @@
 # CoreJava
-Core Jana material
+Core Java material
