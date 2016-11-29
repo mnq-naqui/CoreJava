@@ -18,7 +18,9 @@ public static void main(String[] args) {
 		
 	}
 /*Here the program will execute successfully coz compiler will see that test() throws Class Not Found Exception if we
-throw any exception from the called() then it is necessary to keep try catch in caller.*/
+throw any exception from the called() then it is necessary to keep try catch in caller.
+Notice Class O also to get the difference
+*/
 	
 }
 
