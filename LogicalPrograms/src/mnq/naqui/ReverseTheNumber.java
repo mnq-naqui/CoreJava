@@ -19,6 +19,7 @@ public class ReverseTheNumber {
 
 			// create the reversed number
 			revNum = revNum * 10 + temp;
+			System.out.println(temp);
 			System.out.println(revNum);
 			num = num / 10;
 

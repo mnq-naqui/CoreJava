@@ -1,11 +1,13 @@
 package mnq.naqui;
 
+import java.util.Arrays;
+
 public class BubbleSortDescendingOrder {
 	 
     public static void main(String[] args) {
            
             //create an int array we want to sort using bubble sort algorithm
-            int intArray[] = new int[]{180,180,90,35};
+            int intArray[] = new int[]{11,230,90,35};
            
             //print array before sorting using bubble sort algorithm
             System.out.println("Array Before Bubble Sort");
@@ -18,11 +20,8 @@ public class BubbleSortDescendingOrder {
            
             System.out.println("");
            
-            //print array after sorting using bubble sort algorithm
-            System.out.println("Array After Bubble Sort");
-            for(int i=0; i < intArray.length; i++){
-                    System.out.print(intArray[i] + " ");
-            }
+            //print array after sorting using bubble sort algorithm using Array's overrided toString method.
+            System.out.println( Arrays.toString(intArray));
 
     }
 
@@ -49,11 +48,10 @@ public class BubbleSortDescendingOrder {
              *  
              */
            
-            int n = intArray.length;
             int temp = 0;
            
-            for(int i=0; i < n; i++){
-                    for(int j=1; j <n; j++){
+            for(int i=0; i < intArray.length; i++){
+                    for(int j=1; j <intArray.length; j++){
                            
                             if(intArray[j-1] < intArray[j]){
                                     //swap the elements!

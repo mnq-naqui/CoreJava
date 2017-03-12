@@ -13,7 +13,7 @@ public class InfyQue {
 	
 	solution1(array, countOfZeros);
 		
-	solution2(array, countOfZeros);
+	//solution2(array, countOfZeros);
 			}
 	
 	

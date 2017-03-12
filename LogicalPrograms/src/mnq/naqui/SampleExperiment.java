@@ -1,54 +1,37 @@
 package mnq.naqui;
 
-import java.lang.reflect.Array;
-
 public class SampleExperiment {
-
 	public static void main(String[] args) {
-		
-		int array[]={1,8,5,7,10,9,2};
-		
-		int firstmax=array[0];
 
-		int secondmax=array[1];
+		String categoryValue = "YES";
+		String defaultValue = " ";
+		updateManualFlag(categoryValue, defaultValue);
 
-		int temp;
-		
-		if(firstmax<secondmax)
-
-		{
-
-		temp=secondmax;
-
-		secondmax=firstmax;
-
-		firstmax=temp;
-
-		}
-		
-		for(int i=0;i<7;i++)
-
-		{
-
-		if(firstmax<array[i])
-
-		{
-
-		secondmax=firstmax;
-
-		firstmax=array[i];
-
-		}
-
-		if((firstmax>array[i])&&(array[i]>secondmax))
-
-		{
-
-		secondmax=array[i];
-
-		}
-
-		}
-System.out.println(secondmax);
 	}
+
+	public static boolean isEmpty(String str) {
+		return str == null || str.trim().isEmpty();
+	}
+
+	public static boolean updateManualFlag(String categoryValue, String defaultValue) {
+
+		if (!isEmpty(categoryValue) && !isEmpty(defaultValue)) {
+			return !categoryValue.equals(defaultValue);
+		} else {
+			if (isEmpty(defaultValue)) {
+				if (isEmpty(categoryValue)) {
+					return false;
+				}else {
+					return true;
+				}
+			}else {
+				if (isEmpty(categoryValue)) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+		}
+	}
+
 }
