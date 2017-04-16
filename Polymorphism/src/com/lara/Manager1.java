@@ -5,7 +5,7 @@ package com.lara;
 	inherited to the sub-class.*/
 class E {
 	static void test1() {
-		System.out.println("C-test1");
+		System.out.println("E-test1");
 	}
 }
 
